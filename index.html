@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Casa Brasa</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#inicio">Casa Brasa</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#historia">Historia</a></li>
+        <li class="nav-item"><a class="nav-link" href="#carta">Carta</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menu-dia">Menú del día</a></li>
+        <li class="nav-item"><a class="nav-link" href="#visitanos">Cómo llegar</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-warning" href="#reservas">Reservar mesa</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- PORTADA -->
+<header class="bg-dark text-white py-5" id="inicio">
+  <div class="container py-5">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-7">
+        <h1 class="display-3 fw-bold">Cocina a la leña, sin prisa.</h1>
+        <p class="lead text-white-50">Producto de temporada y brasa de encina.</p>
+        <a href="#reservas" class="btn btn-warning btn-lg me-2">Reservar mesa</a>
+        <a href="#carta" class="btn btn-outline-light btn-lg">Ver la carta</a>
+      </div>
+      <div class="col-lg-5">
+        <div class="card text-bg-secondary">
+          <div class="card-body">
+            <h2 class="card-title h5">Abierto hoy</h2>
+            <p class="card-text mb-1">13:00–16:00 y 20:00–23:30</p>
+            <p class="card-text">Opciones sin gluten y vegetarianas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- HISTORIA -->
+<section class="py-5" id="historia">
+  <div class="container py-4">
+    <div class="row g-4">
+      <div class="col-lg-5">
+        <h2 class="display-6">Una brasa encendida desde 1987</h2>
+      </div>
+      <div class="col-lg-7">
+        <p class="fs-5 text-secondary">Casa Brasa nació como asador de barrio y sigue siendo un negocio familiar. Trabajamos con huerta de la Comunidad de Madrid, carne de la sierra y pescado de lonja, siempre sobre leña de encina.</p>
+        <div class="row text-center g-3 mt-2">
+          <div class="col-4"><p class="display-6 fw-bold mb-0">35+</p><small class="text-secondary">años en Chamberí</small></div>
+          <div class="col-4"><p class="display-6 fw-bold mb-0">12</p><small class="text-secondary">productores locales</small></div>
+          <div class="col-4"><p class="display-6 fw-bold mb-0">60</p><small class="text-secondary">plazas en sala</small></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CARTA -->
+<section class="py-5 bg-body-tertiary" id="carta">
+  <div class="container py-4">
+    <h2 class="display-6">La carta</h2>
+    <p class="text-secondary mb-4">Precios con IVA incluido. Avísanos de cualquier alergia o intolerancia.</p>
+
+    <ul class="nav nav-pills mb-4" role="tablist">
+      <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#entrantes" type="button" role="tab">Entrantes</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#principales" type="button" role="tab">Principales</button></li>
+      <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#postres" type="button" role="tab">Postres</button></li>
+    </ul>
+
+    <div class="tab-content">
+      <div class="tab-pane fade show active" id="entrantes" role="tabpanel">
+        <ul class="list-group list-group-flush col-lg-8">
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Croquetas de cocido</h3><small class="text-secondary">Seis unidades, bechamel melosa.</small></div><strong>9,50 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Pimientos del piquillo asados</h3><small class="text-secondary">Brasa de encina y AOVE.</small></div><strong>11,00 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Ensalada de tomate y ventresca</h3><small class="text-secondary">Tomate de temporada y cebolleta.</small></div><strong>13,50 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Alcachofas a la brasa</h3><small class="text-secondary">Con alioli suave.</small></div><strong>12,00 €</strong></li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="principales" role="tabpanel">
+        <ul class="list-group list-group-flush col-lg-8">
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Chuletón de vaca madurada</h3><small class="text-secondary">1 kg para compartir, con patatas.</small></div><strong>58,00 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Lubina salvaje a la brasa</h3><small class="text-secondary">Con verduras y limón asado.</small></div><strong>24,00 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Arroz de pato y setas</h3><small class="text-secondary">Mínimo dos personas. Precio por persona.</small></div><strong>19,50 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Verduras a la leña con romesco</h3><small class="text-secondary">Vegetariano, sin gluten.</small></div><strong>16,00 €</strong></li>
+        </ul>
+      </div>
+      <div class="tab-pane fade" id="postres" role="tabpanel">
+        <ul class="list-group list-group-flush col-lg-8">
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Torrija de brioche</h3><small class="text-secondary">Caramelizada, con helado de vainilla.</small></div><strong>7,50 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Tarta de queso</h3><small class="text-secondary">Receta de la casa.</small></div><strong>7,00 €</strong></li>
+          <li class="list-group-item bg-transparent d-flex justify-content-between"><div><h3 class="h6 mb-0">Sorbete de limón y albahaca</h3><small class="text-secondary">Sin lácteos ni gluten.</small></div><strong>5,50 €</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MENÚ DEL DÍA -->
+<section class="py-5 bg-success text-white" id="menu-dia">
+  <div class="container py-3">
+    <div class="row align-items-center g-4">
+      <div class="col-lg-6">
+        <h2 class="display-6">Menú del día</h2>
+        <p>De lunes a viernes, de 13:00 a 16:00. Incluye pan, bebida y café.</p>
+        <p class="display-5 fw-bold text-warning mb-0">16,50 €</p>
+      </div>
+      <div class="col-lg-6">
+        <ul class="list-group list-group-flush fs-5">
+          <li class="list-group-item bg-transparent text-white">Primero: lentejas estofadas o ensalada</li>
+          <li class="list-group-item bg-transparent text-white">Segundo: merluza a la brasa o presa ibérica</li>
+          <li class="list-group-item bg-transparent text-white">Postre: tarta de queso o fruta fresca</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓMO LLEGAR -->
+<section class="py-5" id="visitanos">
+  <div class="container py-4">
+    <div class="row g-5">
+      <div class="col-lg-6">
+        <h2 class="display-6 mb-3">Cómo llegar</h2>
+        <address class="text-secondary">Calle de Ejemplo, 12<br>28010 Madrid<br>Metro: Bilbao (líneas 1 y 4)</address>
+        <p class="mb-1"><a href="tel:+34910000000">910 000 000</a></p>
+        <p><a href="mailto:hola@casabrasa.example">hola@casabrasa.example</a></p>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="h4 mb-3">Horario</h2>
+        <table class="table">
+          <tbody>
+            <tr><td>Lunes</td><td class="text-end">Cerrado</td></tr>
+            <tr><td>Martes a viernes</td><td class="text-end">13:00–16:00 · 20:00–23:30</td></tr>
+            <tr><td>Sábado</td><td class="text-end">13:00–16:30 · 20:00–00:00</td></tr>
+            <tr><td>Domingo</td><td class="text-end">13:00–17:00</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVAS -->
+<section class="py-5 bg-body-tertiary" id="reservas">
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-7">
+        <h2 class="display-6 mb-2">Reserva tu mesa</h2>
+        <p class="text-secondary mb-4">Te confirmamos por correo o teléfono en menos de dos horas.</p>
+        <form id="form-reserva" class="row g-3" novalidate>
+          <div class="col-md-6"><label for="nombre" class="form-label">Nombre</label><input id="nombre" class="form-control" required></div>
+          <div class="col-md-6"><label for="tel" class="form-label">Teléfono</label><input id="tel" type="tel" class="form-control" required></div>
+          <div class="col-md-4"><label for="fecha" class="form-label">Fecha</label><input id="fecha" type="date" class="form-control" required></div>
+          <div class="col-md-4"><label for="hora" class="form-label">Hora</label>
+            <select id="hora" class="form-select"><option>13:30</option><option>14:00</option><option>14:30</option><option>20:30</option><option>21:00</option><option>21:30</option></select></div>
+          <div class="col-md-4"><label for="pax" class="form-label">Comensales</label>
+            <select id="pax" class="form-select"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option><option>6</option><option>7</option><option>8</option></select></div>
+          <div class="col-12"><label for="notas" class="form-label">Alergias o comentarios</label><textarea id="notas" rows="3" class="form-control"></textarea></div>
+          <div class="col-12"><button class="btn btn-warning btn-lg" type="submit">Solicitar reserva</button></div>
+          <div class="col-12"><div id="ok" class="alert alert-success d-none" role="status">Solicitud recibida. Te confirmaremos la reserva en breve.</div></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="bg-dark text-white-50 py-4">
+  <div class="container d-flex flex-column flex-md-row justify-content-between gap-2">
+    <div><strong class="text-white">Casa Brasa</strong> · Calle de Ejemplo, 12 · 28010 Madrid</div>
+    <div><a class="link-light" href="#">Instagram</a> · <a class="link-light" href="#">Facebook</a> · <a class="link-light" href="#">Aviso legal</a></div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
